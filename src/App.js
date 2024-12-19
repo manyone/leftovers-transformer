@@ -100,7 +100,7 @@ function App() {
                 const { request_id } = await fal.queue.submit("fal-ai/flux/dev", {
                     input: { prompt: falPrompt },
                 });
-                setRequestId(request_id);
+ //               setRequestId(request_id);
                 console.log("Request submitted with ID:", request_id);
 
 
@@ -115,7 +115,7 @@ function App() {
                                    requestId: request_id
                                });
 
-                               setResultData(result.data);
+ //                              setResultData(result.data);
                               if (result.data && result.data.images && result.data.images.length > 0) {
                                    setGeneratedImage(result.data.images[0].url)
                                }
