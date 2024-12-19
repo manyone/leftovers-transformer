@@ -5,15 +5,15 @@ import './App.css'; // Assuming you want to use a css for loading
 
 function App() {
     const [loading, setLoading] = useState(false);
-    const [resultData, setResultData] = useState(null);
+//    const [resultData, setResultData] = useState(null);
     const [logs, setLogs] = useState([]);
     const [error, setError] = useState(null);
-    const [requestId, setRequestId] = useState(null);
+//    const [requestId, setRequestId] = useState(null);
 
     const [leftovers, setLeftovers] = useState("");
     const [cuisine, setCuisine] = useState("French");
     const [recipe, setRecipe] = useState("");
-    const [falPrompt, setFalPrompt] = useState("");
+//    const [falPrompt, setFalPrompt] = useState("");
     const [generatedImage, setGeneratedImage] = useState(null);
     const [apiKeySetupComplete, setApiKeySetupComplete] = useState(false);
     const [falKey, setFalKey] = useState("");
@@ -50,9 +50,9 @@ function App() {
    const handleGenerateClick = async () => {
         setLoading(true);
         setError(null);
-        setResultData(null);
+ //       setResultData(null);
         setLogs([]);
-        setRequestId(null);
+ //       setRequestId(null);
        setGeneratedImage(null);
 
         //Generate Recipe
@@ -92,7 +92,7 @@ function App() {
              //generate Prompt
               const falPrompt = `A professional and delicious photograph of ${recipeText}, presented on a rustic plate.`
             console.log("Fal Prompt:", falPrompt);
-              setFalPrompt(falPrompt)
+ //             setFalPrompt(falPrompt)
 
 
             // Generate Fal Image
