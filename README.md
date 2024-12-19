@@ -1,7 +1,6 @@
 leftovers transformer
 
-tjis app will processlist of leftovers you enter and generate the recope - and photop - of a cusine syule (french, italian, etc) you desire/
-
+this app will process the list of leftovers you enter and generate the recipe - and photo - of a cuisine style(french, italian, etc) you selec
 Note - if you are remixing
 example .env file:
 REACT_APP_FAL_KEY=xxx
